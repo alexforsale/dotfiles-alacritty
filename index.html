@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-09-17 Wed 08:26 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>index</title>
+<meta name="author" content="Kristian Alexander P" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">index</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org2e8e8b5">alacritty.toml</a>
+<ul>
+<li><a href="#orgb6ba66a">general</a></li>
+<li><a href="#orgd434ec3">window</a>
+<ul>
+<li><a href="#orged49494">dynamic padding</a></li>
+<li><a href="#org9610841">decoration</a></li>
+<li><a href="#orgc523aba">padding</a></li>
+<li><a href="#org4f6ab53">blur</a></li>
+<li><a href="#orgc9ff889">decorator theme variant</a></li>
+</ul>
+</li>
+<li><a href="#org21e86da">scrolling</a>
+<ul>
+<li><a href="#org1de493a">history</a></li>
+<li><a href="#org50c74ee">multiplier</a></li>
+</ul>
+</li>
+<li><a href="#org4246031">Font</a>
+<ul>
+<li><a href="#org4025e59">normal</a></li>
+<li><a href="#org8d6787a">bold</a></li>
+<li><a href="#orgf17ad5d">italic</a></li>
+<li><a href="#org6ff70c1">bold_italic</a></li>
+<li><a href="#org56efd06">size</a></li>
+</ul>
+</li>
+<li><a href="#org1233f52">bell</a>
+<ul>
+<li><a href="#org5d7e25f">animation</a></li>
+<li><a href="#orgba99542">duration</a></li>
+</ul>
+</li>
+<li><a href="#org4100a76">cursor</a>
+<ul>
+<li><a href="#org7d37367">style</a></li>
+<li><a href="#orgf7ffb9a">vi mode style</a></li>
+</ul>
+</li>
+<li><a href="#orge172551">mouse</a>
+<ul>
+<li><a href="#orgb669b34">hide when typing</a></li>
+</ul>
+</li>
+<li><a href="#org6a85e3d">selection</a>
+<ul>
+<li><a href="#org286ff34">save to clipboard</a></li>
+</ul>
+</li>
+<li><a href="#org75e5246">env</a>
+<ul>
+<li><a href="#orga32f993">term</a></li>
+</ul>
+</li>
+<li><a href="#org8609f63">hints</a>
+<ul>
+<li><a href="#org3e2ee4a">enabled</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orge6772be">Themes</a>
+<ul>
+<li><a href="#org7e36529">nord</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2e8e8b5" class="outline-2">
+<h2 id="org2e8e8b5">alacritty.toml</h2>
+<div class="outline-text-2" id="text-org2e8e8b5">
+<p>
+See all the syntax and available variables in their <a href="https://alacritty.org/config-alacritty.html">official site</a>.
+</p>
+</div>
+<div id="outline-container-orgb6ba66a" class="outline-3">
+<h3 id="orgb6ba66a">general</h3>
+<div class="outline-text-3" id="text-orgb6ba66a">
+<p>
+The general sections.
+</p>
+<div class="org-src-container">
+<pre class="src src-toml">[<span style="color: #228b22;">general</span>]
+</pre>
+</div>
+<p>
+Include the theme files.
+</p>
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">import</span> = [<span style="color: #bc8f8f;">"~/.config/alacritty/themes/nord.toml"</span>]
+</pre>
+</div>
+<p>
+This enables live configuration reloading
+</p>
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">live_config_reload</span> = <span style="color: #4169e1;">true</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd434ec3" class="outline-3">
+<h3 id="orgd434ec3">window</h3>
+<div class="outline-text-3" id="text-orgd434ec3">
+<div class="org-src-container">
+<pre class="src src-toml">[<span style="color: #228b22;">window</span>]
+</pre>
+</div>
+</div>
+<div id="outline-container-orged49494" class="outline-4">
+<h4 id="orged49494">dynamic padding</h4>
+<div class="outline-text-4" id="text-orged49494">
+<p>
+Spread additional padding evenly around the terminal content.
+</p>
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">dynamic_padding</span> = <span style="color: #4169e1;">true</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org9610841" class="outline-4">
+<h4 id="org9610841">decoration</h4>
+<div class="outline-text-4" id="text-org9610841">
+<p>
+Window decorations.
+</p>
+<dl class="org-dl">
+<dt>Full</dt><dd>Borders and title bar.</dd>
+<dt>None</dt><dd>Neither borders nor title bar.</dd>
+<dt>Transparent (macOS only)</dt><dd>Title bar, transparent background and title bar buttons.</dd>
+<dt>Buttonless (macOS only)</dt><dd>Title bar, transparent background and no title bar buttons.</dd>
+</dl>
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">decorations</span> = <span style="color: #bc8f8f;">"None"</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc523aba" class="outline-4">
+<h4 id="orgc523aba">padding</h4>
+<div class="outline-text-4" id="text-orgc523aba">
+<p>
+Blank space added around the window in pixels. This padding is scaled by DPI and the specified value is always added at both opposing sides.
+</p>
+
+<p>
+Default: <code>{ x = 0, y = 0 }</code>
+</p>
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">padding</span> = { x = 25, y = 25 }
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org4f6ab53" class="outline-4">
+<h4 id="org4f6ab53">blur</h4>
+<div class="outline-text-4" id="text-org4f6ab53">
+<p>
+Request compositor to blur content behind transparent windows.
+</p>
+
+<p>
+Default: <code>false</code>
+</p>
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">blur</span> = <span style="color: #4169e1;">true</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc9ff889" class="outline-4">
+<h4 id="orgc9ff889">decorator theme variant</h4>
+<div class="outline-text-4" id="text-orgc9ff889">
+<p>
+Override the variant of the System theme/GTK theme/Wayland client side decorations. Set this to "None" to use the system's default theme variant.
+</p>
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">decorations_theme_variant</span> = <span style="color: #bc8f8f;">"Dark"</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org21e86da" class="outline-3">
+<h3 id="org21e86da">scrolling</h3>
+<div class="outline-text-3" id="text-org21e86da">
+</div>
+<div id="outline-container-org1de493a" class="outline-4">
+<h4 id="org1de493a">history</h4>
+<div class="outline-text-4" id="text-org1de493a">
+<p>
+Maximum number of lines in the scrollback buffer. Specifying 0 will disable scrolling. Limited to 100000.
+</p>
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">history</span> = 100000
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org50c74ee" class="outline-4">
+<h4 id="org50c74ee">multiplier</h4>
+<div class="outline-text-4" id="text-org50c74ee">
+<p>
+Number of line scrolled for every input scroll increment.
+</p>
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">multiplier</span> = 2
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org4246031" class="outline-3">
+<h3 id="org4246031">Font</h3>
+<div class="outline-text-3" id="text-org4246031">
+<div class="org-src-container">
+<pre class="src src-toml">[<span style="color: #228b22;">font</span>]
+</pre>
+</div>
+</div>
+<div id="outline-container-org4025e59" class="outline-4">
+<h4 id="org4025e59">normal</h4>
+<div class="outline-text-4" id="text-org4025e59">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">normal</span> = { family = <span style="color: #bc8f8f;">"JetBrainsMonoNL Nerd Font Mono"</span>, style = <span style="color: #bc8f8f;">"Regular"</span> }
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org8d6787a" class="outline-4">
+<h4 id="org8d6787a">bold</h4>
+<div class="outline-text-4" id="text-org8d6787a">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">bold</span> = { family = <span style="color: #bc8f8f;">"JetBrainsMonoNL Nerd Font Mono"</span>, style = <span style="color: #bc8f8f;">"Bold"</span> }
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf17ad5d" class="outline-4">
+<h4 id="orgf17ad5d">italic</h4>
+<div class="outline-text-4" id="text-orgf17ad5d">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">italic</span> = { family = <span style="color: #bc8f8f;">"JetBrainsMonoNL Nerd Font Mono"</span>, style = <span style="color: #bc8f8f;">"Italic"</span> }
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org6ff70c1" class="outline-4">
+<h4 id="org6ff70c1">bold_italic</h4>
+<div class="outline-text-4" id="text-org6ff70c1">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">bold_italic</span> = { family = <span style="color: #bc8f8f;">"JetBrainsMonoNL Nerd Font Mono"</span>, style = <span style="color: #bc8f8f;">"Semibold Italic"</span> }
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org56efd06" class="outline-4">
+<h4 id="org56efd06">size</h4>
+<div class="outline-text-4" id="text-org56efd06">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">size</span> = 8
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org1233f52" class="outline-3">
+<h3 id="org1233f52">bell</h3>
+<div class="outline-text-3" id="text-org1233f52">
+<div class="org-src-container">
+<pre class="src src-toml">[<span style="color: #228b22;">bell</span>]
+</pre>
+</div>
+</div>
+<div id="outline-container-org5d7e25f" class="outline-4">
+<h4 id="org5d7e25f">animation</h4>
+<div class="outline-text-4" id="text-org5d7e25f">
+<p>
+Visual bell animation effect for flashing the screen when the visual bell is rung.
+</p>
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">animation</span> = <span style="color: #bc8f8f;">"EaseOutCirc"</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgba99542" class="outline-4">
+<h4 id="orgba99542">duration</h4>
+<div class="outline-text-4" id="text-orgba99542">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">duration</span> = 1
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org4100a76" class="outline-3">
+<h3 id="org4100a76">cursor</h3>
+<div class="outline-text-3" id="text-org4100a76">
+<div class="org-src-container">
+<pre class="src src-toml">[<span style="color: #228b22;">cursor</span>]
+</pre>
+</div>
+</div>
+<div id="outline-container-org7d37367" class="outline-4">
+<h4 id="org7d37367">style</h4>
+<div class="outline-text-4" id="text-org7d37367">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">style</span> = { shape = <span style="color: #bc8f8f;">"Beam"</span>, blinking = <span style="color: #bc8f8f;">"On"</span> }
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf7ffb9a" class="outline-4">
+<h4 id="orgf7ffb9a">vi mode style</h4>
+<div class="outline-text-4" id="text-orgf7ffb9a">
+<p>
+If the vi mode cursor style is "None" or not specified, it will fall back to the active value of the normal cursor.
+</p>
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">vi_mode_style</span> = { shape = <span style="color: #bc8f8f;">"Block"</span>, blinking = <span style="color: #bc8f8f;">"Off"</span> }
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orge172551" class="outline-3">
+<h3 id="orge172551">mouse</h3>
+<div class="outline-text-3" id="text-orge172551">
+<div class="org-src-container">
+<pre class="src src-toml">[<span style="color: #228b22;">mouse</span>]
+</pre>
+</div>
+</div>
+<div id="outline-container-orgb669b34" class="outline-4">
+<h4 id="orgb669b34">hide when typing</h4>
+<div class="outline-text-4" id="text-orgb669b34">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">hide_when_typing</span> = <span style="color: #4169e1;">true</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org6a85e3d" class="outline-3">
+<h3 id="org6a85e3d">selection</h3>
+<div class="outline-text-3" id="text-org6a85e3d">
+<div class="org-src-container">
+<pre class="src src-toml">[<span style="color: #228b22;">selection</span>]
+</pre>
+</div>
+</div>
+<div id="outline-container-org286ff34" class="outline-4">
+<h4 id="org286ff34">save to clipboard</h4>
+<div class="outline-text-4" id="text-org286ff34">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">save_to_clipboard</span> = <span style="color: #4169e1;">true</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org75e5246" class="outline-3">
+<h3 id="org75e5246">env</h3>
+<div class="outline-text-3" id="text-org75e5246">
+<div class="org-src-container">
+<pre class="src src-toml">[<span style="color: #228b22;">env</span>]
+</pre>
+</div>
+</div>
+<div id="outline-container-orga32f993" class="outline-4">
+<h4 id="orga32f993">term</h4>
+<div class="outline-text-4" id="text-orga32f993">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">TERM</span> = <span style="color: #bc8f8f;">"xterm-256color"</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org8609f63" class="outline-3">
+<h3 id="org8609f63">hints</h3>
+<div class="outline-text-3" id="text-org8609f63">
+</div>
+<div id="outline-container-org3e2ee4a" class="outline-4">
+<h4 id="org3e2ee4a">enabled</h4>
+<div class="outline-text-4" id="text-org3e2ee4a">
+<div class="org-src-container">
+<pre class="src src-toml">[[<span style="color: #228b22;">hints.enabled</span>]]
+</pre>
+</div>
+</div>
+<ul class="org-ul">
+<li><a id="org7d20329"></a>command<br />
+<div class="outline-text-5" id="text-org7d20329">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">command</span> = <span style="color: #bc8f8f;">"xdg-open"</span>
+</pre>
+</div>
+</div>
+</li>
+<li><a id="orgd4f12d1"></a>hyperlinks<br />
+<div class="outline-text-5" id="text-orgd4f12d1">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">hyperlinks</span> = <span style="color: #4169e1;">true</span>
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org1714e6f"></a>post processing<br />
+<div class="outline-text-5" id="text-org1714e6f">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">post_processing</span> = <span style="color: #4169e1;">true</span>
+</pre>
+</div>
+</div>
+</li>
+<li><a id="orgfa3644e"></a>persist<br />
+<div class="outline-text-5" id="text-orgfa3644e">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">persist</span> = <span style="color: #4169e1;">false</span>
+</pre>
+</div>
+</div>
+</li>
+<li><a id="orge3a07af"></a>mouse<br />
+<div class="outline-text-5" id="text-orge3a07af">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">mouse.enabled</span> = <span style="color: #4169e1;">true</span>
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org7fc8f88"></a>binding<br />
+<div class="outline-text-5" id="text-org7fc8f88">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">binding</span> = { key = <span style="color: #bc8f8f;">"U"</span>, mods = <span style="color: #bc8f8f;">"Control|Shift"</span> }
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org44c7f8c"></a>regex<br />
+<div class="outline-text-5" id="text-org44c7f8c">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b8860b;">regex</span> = <span style="color: #bc8f8f;">"(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F&lt;&gt;\"\\s{-}\\^&#10216;&#10217;`]+"</span>
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge6772be" class="outline-2">
+<h2 id="orge6772be">Themes</h2>
+<div class="outline-text-2" id="text-orge6772be">
+</div>
+<div id="outline-container-org7e36529" class="outline-3">
+<h3 id="org7e36529">nord</h3>
+<div class="outline-text-3" id="text-org7e36529">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b22222;"># </span><span style="color: #b22222;">-*- eval: (rainbow-mode 1) -*-
+</span><span style="color: #b22222;"># </span><span style="color: #b22222;">Colors (Nord)
+</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Default colors
+</span>[<span style="color: #228b22;">colors.primary</span>]
+<span style="color: #b8860b;">background</span> = <span style="color: #bc8f8f;">'#2E3440'</span>
+<span style="color: #b8860b;">foreground</span> = <span style="color: #bc8f8f;">'#D8DEE9'</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Normal colors
+</span>[<span style="color: #228b22;">colors.normal</span>]
+<span style="color: #b8860b;">black</span>   = <span style="color: #bc8f8f;">'#3B4252'</span>
+<span style="color: #b8860b;">red</span>     = <span style="color: #bc8f8f;">'#BF616A'</span>
+<span style="color: #b8860b;">green</span>   = <span style="color: #bc8f8f;">'#A3BE8C'</span>
+<span style="color: #b8860b;">yellow</span>  = <span style="color: #bc8f8f;">'#EBCB8B'</span>
+<span style="color: #b8860b;">blue</span>    = <span style="color: #bc8f8f;">'#81A1C1'</span>
+<span style="color: #b8860b;">magenta</span> = <span style="color: #bc8f8f;">'#B48EAD'</span>
+<span style="color: #b8860b;">cyan</span>    = <span style="color: #bc8f8f;">'#88C0D0'</span>
+<span style="color: #b8860b;">white</span>   = <span style="color: #bc8f8f;">'#E5E9F0'</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Bright colors
+</span>[<span style="color: #228b22;">colors.bright</span>]
+<span style="color: #b8860b;">black</span>   = <span style="color: #bc8f8f;">'#4C566A'</span>
+<span style="color: #b8860b;">red</span>     = <span style="color: #bc8f8f;">'#BF616A'</span>
+<span style="color: #b8860b;">green</span>   = <span style="color: #bc8f8f;">'#A3BE8C'</span>
+<span style="color: #b8860b;">yellow</span>  = <span style="color: #bc8f8f;">'#EBCB8B'</span>
+<span style="color: #b8860b;">blue</span>    = <span style="color: #bc8f8f;">'#81A1C1'</span>
+<span style="color: #b8860b;">magenta</span> = <span style="color: #bc8f8f;">'#B48EAD'</span>
+<span style="color: #b8860b;">cyan</span>    = <span style="color: #bc8f8f;">'#8FBCBB'</span>
+<span style="color: #b8860b;">white</span>   = <span style="color: #bc8f8f;">'#ECEFF4'</span>
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2025-09-17 Wed 00:00</p>
+<p class="author">Author: Kristian Alexander P</p>
+<p class="date">Created: 2025-09-17 Wed 08:26</p>
+</div>
+</body>
+</html>
