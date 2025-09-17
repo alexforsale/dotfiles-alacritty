@@ -1,6 +1,5 @@
-.packages/
-content/
-public/
-.local/
 .config/
-.packages/
+.login
+.logout
+.profile
+.shrc
