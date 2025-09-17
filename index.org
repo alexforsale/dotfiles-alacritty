@@ -1,0 +1,224 @@
+#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:{} arch:headline
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:nil
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+options: timestamp:t title:t toc:t todo:t |:t
+#+title: index
+#+date: <2025-09-17 Wed>
+#+author: Kristian Alexander P
+#+email: alexforsale@yahoo.com
+#+language: en
+#+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 30.2 (Org mode 9.7.11)
+#+cite_export:
+* alacritty.toml
+:PROPERTIES:
+:header-args: :tangle .config/alacritty/alacritty.toml :mkdirp t
+:END:
+See all the syntax and available variables in their [[https://alacritty.org/config-alacritty.html][official site]].
+** general
+The general sections.
+#+begin_src toml
+[general]
+#+end_src
+Include the theme files.
+#+begin_src toml
+  import = ["~/.config/alacritty/themes/nord.toml"]
+#+end_src
+This enables live configuration reloading
+#+begin_src toml
+  live_config_reload = true
+#+end_src
+** window
+#+begin_src toml
+  [window]
+#+end_src
+*** dynamic padding
+Spread additional padding evenly around the terminal content.
+#+begin_src toml
+  dynamic_padding = true
+#+end_src
+*** decoration
+Window decorations.
+- Full :: Borders and title bar.
+- None :: Neither borders nor title bar.
+- Transparent (macOS only) :: Title bar, transparent background and title bar buttons.
+- Buttonless (macOS only) :: Title bar, transparent background and no title bar buttons.
+#+begin_src toml
+  decorations = "None"
+#+end_src
+*** padding
+Blank space added around the window in pixels. This padding is scaled by DPI and the specified value is always added at both opposing sides.
+
+Default: ={ x = 0, y = 0 }=
+#+begin_src toml
+  padding = { x = 25, y = 25 }
+#+end_src
+*** blur
+Request compositor to blur content behind transparent windows.
+
+Default: =false=
+#+begin_src toml
+  blur = true
+#+end_src
+*** decorator theme variant
+Override the variant of the System theme/GTK theme/Wayland client side decorations. Set this to "None" to use the system's default theme variant.
+#+begin_src toml
+  decorations_theme_variant = "Dark"
+#+end_src
+** scrolling
+*** history
+Maximum number of lines in the scrollback buffer. Specifying 0 will disable scrolling. Limited to 100000.
+#+begin_src toml
+  history = 100000
+#+end_src
+*** multiplier
+Number of line scrolled for every input scroll increment.
+#+begin_src toml
+  multiplier = 2
+#+end_src
+** Font
+#+begin_src toml
+  [font]
+#+end_src
+*** normal
+#+begin_src toml
+  normal = { family = "JetBrainsMonoNL Nerd Font Mono", style = "Regular" }
+#+end_src
+*** bold
+#+begin_src toml
+  bold = { family = "JetBrainsMonoNL Nerd Font Mono", style = "Bold" }
+#+end_src
+*** italic
+#+begin_src toml
+  italic = { family = "JetBrainsMonoNL Nerd Font Mono", style = "Italic" }
+#+end_src
+*** bold_italic
+#+begin_src toml
+  bold_italic = { family = "JetBrainsMonoNL Nerd Font Mono", style = "Semibold Italic" }
+#+end_src
+*** size
+#+begin_src toml
+  size = 8
+#+end_src
+** bell
+#+begin_src toml
+  [bell]
+#+end_src
+*** animation
+Visual bell animation effect for flashing the screen when the visual bell is rung.
+#+begin_src toml
+  animation = "EaseOutCirc"
+#+end_src
+*** duration
+#+begin_src toml
+  duration = 1
+#+end_src
+** cursor
+#+begin_src toml
+  [cursor]
+#+end_src
+*** style
+#+begin_src toml
+  style = { shape = "Beam", blinking = "On" }
+#+end_src
+*** vi mode style
+If the vi mode cursor style is "None" or not specified, it will fall back to the active value of the normal cursor.
+#+begin_src toml
+  vi_mode_style = { shape = "Block", blinking = "Off" }
+#+end_src
+** mouse
+#+begin_src toml
+  [mouse]
+#+end_src
+*** hide when typing
+#+begin_src toml
+  hide_when_typing = true
+#+end_src
+** selection
+#+begin_src toml
+  [selection]
+#+end_src
+*** save to clipboard
+#+begin_src toml
+  save_to_clipboard = true
+#+end_src
+** env
+#+begin_src toml
+  [env]
+#+end_src
+*** term
+#+begin_src toml
+  TERM = "xterm-256color"
+#+end_src
+** hints
+*** enabled
+#+begin_src toml
+  [[hints.enabled]]
+#+end_src
+**** command
+#+begin_src toml
+  command = "xdg-open"
+#+end_src
+**** hyperlinks
+#+begin_src toml
+  hyperlinks = true
+#+end_src
+**** post processing
+#+begin_src toml
+  post_processing = true
+#+end_src
+**** persist
+#+begin_src toml
+  persist = false
+#+end_src
+**** mouse
+#+begin_src toml
+  mouse.enabled = true
+#+end_src
+**** binding
+#+begin_src toml
+binding = { key = "U", mods = "Control|Shift" }
+#+end_src
+**** regex
+#+begin_src toml
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+#+end_src
+* Themes
+** nord
+:PROPERTIES:
+:header-args: :tangle .config/alacritty/themes/nord.toml :mkdirp t
+:END:
+#+begin_src toml
+  # -*- eval: (rainbow-mode 1) -*-
+  # Colors (Nord)
+
+  # Default colors
+  [colors.primary]
+  background = '#2E3440'
+  foreground = '#D8DEE9'
+
+  # Normal colors
+  [colors.normal]
+  black   = '#3B4252'
+  red     = '#BF616A'
+  green   = '#A3BE8C'
+  yellow  = '#EBCB8B'
+  blue    = '#81A1C1'
+  magenta = '#B48EAD'
+  cyan    = '#88C0D0'
+  white   = '#E5E9F0'
+
+  # Bright colors
+  [colors.bright]
+  black   = '#4C566A'
+  red     = '#BF616A'
+  green   = '#A3BE8C'
+  yellow  = '#EBCB8B'
+  blue    = '#81A1C1'
+  magenta = '#B48EAD'
+  cyan    = '#8FBCBB'
+  white   = '#ECEFF4'
+
+#+end_src
