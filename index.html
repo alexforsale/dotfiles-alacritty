@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-09-17 Wed 08:26 -->
+<!-- 2025-09-17 Wed 08:30 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>index</title>
@@ -193,6 +193,9 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
+<style> #content{max-width:1800px;}</style>
+<style> p{max-width:800px;}</style>
+<style> li{max-width:800px;}</style>
 </head>
 <body>
 <div id="content" class="content">
@@ -201,85 +204,85 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org2e8e8b5">alacritty.toml</a>
+<li><a href="#org5232e5e">alacritty.toml</a>
 <ul>
-<li><a href="#orgb6ba66a">general</a></li>
-<li><a href="#orgd434ec3">window</a>
+<li><a href="#org2e3c68b">general</a></li>
+<li><a href="#org711ad03">window</a>
 <ul>
-<li><a href="#orged49494">dynamic padding</a></li>
-<li><a href="#org9610841">decoration</a></li>
-<li><a href="#orgc523aba">padding</a></li>
-<li><a href="#org4f6ab53">blur</a></li>
-<li><a href="#orgc9ff889">decorator theme variant</a></li>
+<li><a href="#orgc38119f">dynamic padding</a></li>
+<li><a href="#org689aabb">decoration</a></li>
+<li><a href="#orgaf42d0f">padding</a></li>
+<li><a href="#orgbe8ca85">blur</a></li>
+<li><a href="#orgcc9742d">decorator theme variant</a></li>
 </ul>
 </li>
-<li><a href="#org21e86da">scrolling</a>
+<li><a href="#org7b58c3d">scrolling</a>
 <ul>
-<li><a href="#org1de493a">history</a></li>
-<li><a href="#org50c74ee">multiplier</a></li>
+<li><a href="#org6dea6ec">history</a></li>
+<li><a href="#org2016aa7">multiplier</a></li>
 </ul>
 </li>
-<li><a href="#org4246031">Font</a>
+<li><a href="#orgdf2872e">Font</a>
 <ul>
-<li><a href="#org4025e59">normal</a></li>
-<li><a href="#org8d6787a">bold</a></li>
-<li><a href="#orgf17ad5d">italic</a></li>
-<li><a href="#org6ff70c1">bold_italic</a></li>
-<li><a href="#org56efd06">size</a></li>
+<li><a href="#org4348903">normal</a></li>
+<li><a href="#orga0d5955">bold</a></li>
+<li><a href="#org62e6d61">italic</a></li>
+<li><a href="#org4d97d6d">bold_italic</a></li>
+<li><a href="#org1bb8915">size</a></li>
 </ul>
 </li>
-<li><a href="#org1233f52">bell</a>
+<li><a href="#org9633e0e">bell</a>
 <ul>
-<li><a href="#org5d7e25f">animation</a></li>
-<li><a href="#orgba99542">duration</a></li>
+<li><a href="#org6a56016">animation</a></li>
+<li><a href="#orge5d332c">duration</a></li>
 </ul>
 </li>
-<li><a href="#org4100a76">cursor</a>
+<li><a href="#orgc797d7e">cursor</a>
 <ul>
-<li><a href="#org7d37367">style</a></li>
-<li><a href="#orgf7ffb9a">vi mode style</a></li>
+<li><a href="#orgacbda46">style</a></li>
+<li><a href="#org85ff64b">vi mode style</a></li>
 </ul>
 </li>
-<li><a href="#orge172551">mouse</a>
+<li><a href="#org969a742">mouse</a>
 <ul>
-<li><a href="#orgb669b34">hide when typing</a></li>
+<li><a href="#orgfc56715">hide when typing</a></li>
 </ul>
 </li>
-<li><a href="#org6a85e3d">selection</a>
+<li><a href="#org38b13d8">selection</a>
 <ul>
-<li><a href="#org286ff34">save to clipboard</a></li>
+<li><a href="#org208443c">save to clipboard</a></li>
 </ul>
 </li>
-<li><a href="#org75e5246">env</a>
+<li><a href="#org651d564">env</a>
 <ul>
-<li><a href="#orga32f993">term</a></li>
+<li><a href="#org926142a">term</a></li>
 </ul>
 </li>
-<li><a href="#org8609f63">hints</a>
+<li><a href="#orgaf5f3ef">hints</a>
 <ul>
-<li><a href="#org3e2ee4a">enabled</a></li>
+<li><a href="#orgd688312">enabled</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orge6772be">Themes</a>
+<li><a href="#orgd0bb3c4">Themes</a>
 <ul>
-<li><a href="#org7e36529">nord</a></li>
+<li><a href="#orgedcacd6">nord</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2e8e8b5" class="outline-2">
-<h2 id="org2e8e8b5">alacritty.toml</h2>
-<div class="outline-text-2" id="text-org2e8e8b5">
+<div id="outline-container-org5232e5e" class="outline-2">
+<h2 id="org5232e5e">alacritty.toml</h2>
+<div class="outline-text-2" id="text-org5232e5e">
 <p>
 See all the syntax and available variables in their <a href="https://alacritty.org/config-alacritty.html">official site</a>.
 </p>
 </div>
-<div id="outline-container-orgb6ba66a" class="outline-3">
-<h3 id="orgb6ba66a">general</h3>
-<div class="outline-text-3" id="text-orgb6ba66a">
+<div id="outline-container-org2e3c68b" class="outline-3">
+<h3 id="org2e3c68b">general</h3>
+<div class="outline-text-3" id="text-org2e3c68b">
 <p>
 The general sections.
 </p>
@@ -303,17 +306,17 @@ This enables live configuration reloading
 </div>
 </div>
 </div>
-<div id="outline-container-orgd434ec3" class="outline-3">
-<h3 id="orgd434ec3">window</h3>
-<div class="outline-text-3" id="text-orgd434ec3">
+<div id="outline-container-org711ad03" class="outline-3">
+<h3 id="org711ad03">window</h3>
+<div class="outline-text-3" id="text-org711ad03">
 <div class="org-src-container">
 <pre class="src src-toml">[<span style="color: #228b22;">window</span>]
 </pre>
 </div>
 </div>
-<div id="outline-container-orged49494" class="outline-4">
-<h4 id="orged49494">dynamic padding</h4>
-<div class="outline-text-4" id="text-orged49494">
+<div id="outline-container-orgc38119f" class="outline-4">
+<h4 id="orgc38119f">dynamic padding</h4>
+<div class="outline-text-4" id="text-orgc38119f">
 <p>
 Spread additional padding evenly around the terminal content.
 </p>
@@ -323,9 +326,9 @@ Spread additional padding evenly around the terminal content.
 </div>
 </div>
 </div>
-<div id="outline-container-org9610841" class="outline-4">
-<h4 id="org9610841">decoration</h4>
-<div class="outline-text-4" id="text-org9610841">
+<div id="outline-container-org689aabb" class="outline-4">
+<h4 id="org689aabb">decoration</h4>
+<div class="outline-text-4" id="text-org689aabb">
 <p>
 Window decorations.
 </p>
@@ -341,9 +344,9 @@ Window decorations.
 </div>
 </div>
 </div>
-<div id="outline-container-orgc523aba" class="outline-4">
-<h4 id="orgc523aba">padding</h4>
-<div class="outline-text-4" id="text-orgc523aba">
+<div id="outline-container-orgaf42d0f" class="outline-4">
+<h4 id="orgaf42d0f">padding</h4>
+<div class="outline-text-4" id="text-orgaf42d0f">
 <p>
 Blank space added around the window in pixels. This padding is scaled by DPI and the specified value is always added at both opposing sides.
 </p>
@@ -357,9 +360,9 @@ Default: <code>{ x = 0, y = 0 }</code>
 </div>
 </div>
 </div>
-<div id="outline-container-org4f6ab53" class="outline-4">
-<h4 id="org4f6ab53">blur</h4>
-<div class="outline-text-4" id="text-org4f6ab53">
+<div id="outline-container-orgbe8ca85" class="outline-4">
+<h4 id="orgbe8ca85">blur</h4>
+<div class="outline-text-4" id="text-orgbe8ca85">
 <p>
 Request compositor to blur content behind transparent windows.
 </p>
@@ -373,9 +376,9 @@ Default: <code>false</code>
 </div>
 </div>
 </div>
-<div id="outline-container-orgc9ff889" class="outline-4">
-<h4 id="orgc9ff889">decorator theme variant</h4>
-<div class="outline-text-4" id="text-orgc9ff889">
+<div id="outline-container-orgcc9742d" class="outline-4">
+<h4 id="orgcc9742d">decorator theme variant</h4>
+<div class="outline-text-4" id="text-orgcc9742d">
 <p>
 Override the variant of the System theme/GTK theme/Wayland client side decorations. Set this to "None" to use the system's default theme variant.
 </p>
@@ -386,13 +389,13 @@ Override the variant of the System theme/GTK theme/Wayland client side decoratio
 </div>
 </div>
 </div>
-<div id="outline-container-org21e86da" class="outline-3">
-<h3 id="org21e86da">scrolling</h3>
-<div class="outline-text-3" id="text-org21e86da">
+<div id="outline-container-org7b58c3d" class="outline-3">
+<h3 id="org7b58c3d">scrolling</h3>
+<div class="outline-text-3" id="text-org7b58c3d">
 </div>
-<div id="outline-container-org1de493a" class="outline-4">
-<h4 id="org1de493a">history</h4>
-<div class="outline-text-4" id="text-org1de493a">
+<div id="outline-container-org6dea6ec" class="outline-4">
+<h4 id="org6dea6ec">history</h4>
+<div class="outline-text-4" id="text-org6dea6ec">
 <p>
 Maximum number of lines in the scrollback buffer. Specifying 0 will disable scrolling. Limited to 100000.
 </p>
@@ -402,9 +405,9 @@ Maximum number of lines in the scrollback buffer. Specifying 0 will disable scro
 </div>
 </div>
 </div>
-<div id="outline-container-org50c74ee" class="outline-4">
-<h4 id="org50c74ee">multiplier</h4>
-<div class="outline-text-4" id="text-org50c74ee">
+<div id="outline-container-org2016aa7" class="outline-4">
+<h4 id="org2016aa7">multiplier</h4>
+<div class="outline-text-4" id="text-org2016aa7">
 <p>
 Number of line scrolled for every input scroll increment.
 </p>
@@ -415,53 +418,53 @@ Number of line scrolled for every input scroll increment.
 </div>
 </div>
 </div>
-<div id="outline-container-org4246031" class="outline-3">
-<h3 id="org4246031">Font</h3>
-<div class="outline-text-3" id="text-org4246031">
+<div id="outline-container-orgdf2872e" class="outline-3">
+<h3 id="orgdf2872e">Font</h3>
+<div class="outline-text-3" id="text-orgdf2872e">
 <div class="org-src-container">
 <pre class="src src-toml">[<span style="color: #228b22;">font</span>]
 </pre>
 </div>
 </div>
-<div id="outline-container-org4025e59" class="outline-4">
-<h4 id="org4025e59">normal</h4>
-<div class="outline-text-4" id="text-org4025e59">
+<div id="outline-container-org4348903" class="outline-4">
+<h4 id="org4348903">normal</h4>
+<div class="outline-text-4" id="text-org4348903">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">normal</span> = { family = <span style="color: #bc8f8f;">"JetBrainsMonoNL Nerd Font Mono"</span>, style = <span style="color: #bc8f8f;">"Regular"</span> }
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org8d6787a" class="outline-4">
-<h4 id="org8d6787a">bold</h4>
-<div class="outline-text-4" id="text-org8d6787a">
+<div id="outline-container-orga0d5955" class="outline-4">
+<h4 id="orga0d5955">bold</h4>
+<div class="outline-text-4" id="text-orga0d5955">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">bold</span> = { family = <span style="color: #bc8f8f;">"JetBrainsMonoNL Nerd Font Mono"</span>, style = <span style="color: #bc8f8f;">"Bold"</span> }
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgf17ad5d" class="outline-4">
-<h4 id="orgf17ad5d">italic</h4>
-<div class="outline-text-4" id="text-orgf17ad5d">
+<div id="outline-container-org62e6d61" class="outline-4">
+<h4 id="org62e6d61">italic</h4>
+<div class="outline-text-4" id="text-org62e6d61">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">italic</span> = { family = <span style="color: #bc8f8f;">"JetBrainsMonoNL Nerd Font Mono"</span>, style = <span style="color: #bc8f8f;">"Italic"</span> }
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org6ff70c1" class="outline-4">
-<h4 id="org6ff70c1">bold_italic</h4>
-<div class="outline-text-4" id="text-org6ff70c1">
+<div id="outline-container-org4d97d6d" class="outline-4">
+<h4 id="org4d97d6d">bold_italic</h4>
+<div class="outline-text-4" id="text-org4d97d6d">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">bold_italic</span> = { family = <span style="color: #bc8f8f;">"JetBrainsMonoNL Nerd Font Mono"</span>, style = <span style="color: #bc8f8f;">"Semibold Italic"</span> }
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org56efd06" class="outline-4">
-<h4 id="org56efd06">size</h4>
-<div class="outline-text-4" id="text-org56efd06">
+<div id="outline-container-org1bb8915" class="outline-4">
+<h4 id="org1bb8915">size</h4>
+<div class="outline-text-4" id="text-org1bb8915">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">size</span> = 8
 </pre>
@@ -469,17 +472,17 @@ Number of line scrolled for every input scroll increment.
 </div>
 </div>
 </div>
-<div id="outline-container-org1233f52" class="outline-3">
-<h3 id="org1233f52">bell</h3>
-<div class="outline-text-3" id="text-org1233f52">
+<div id="outline-container-org9633e0e" class="outline-3">
+<h3 id="org9633e0e">bell</h3>
+<div class="outline-text-3" id="text-org9633e0e">
 <div class="org-src-container">
 <pre class="src src-toml">[<span style="color: #228b22;">bell</span>]
 </pre>
 </div>
 </div>
-<div id="outline-container-org5d7e25f" class="outline-4">
-<h4 id="org5d7e25f">animation</h4>
-<div class="outline-text-4" id="text-org5d7e25f">
+<div id="outline-container-org6a56016" class="outline-4">
+<h4 id="org6a56016">animation</h4>
+<div class="outline-text-4" id="text-org6a56016">
 <p>
 Visual bell animation effect for flashing the screen when the visual bell is rung.
 </p>
@@ -489,9 +492,9 @@ Visual bell animation effect for flashing the screen when the visual bell is run
 </div>
 </div>
 </div>
-<div id="outline-container-orgba99542" class="outline-4">
-<h4 id="orgba99542">duration</h4>
-<div class="outline-text-4" id="text-orgba99542">
+<div id="outline-container-orge5d332c" class="outline-4">
+<h4 id="orge5d332c">duration</h4>
+<div class="outline-text-4" id="text-orge5d332c">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">duration</span> = 1
 </pre>
@@ -499,26 +502,26 @@ Visual bell animation effect for flashing the screen when the visual bell is run
 </div>
 </div>
 </div>
-<div id="outline-container-org4100a76" class="outline-3">
-<h3 id="org4100a76">cursor</h3>
-<div class="outline-text-3" id="text-org4100a76">
+<div id="outline-container-orgc797d7e" class="outline-3">
+<h3 id="orgc797d7e">cursor</h3>
+<div class="outline-text-3" id="text-orgc797d7e">
 <div class="org-src-container">
 <pre class="src src-toml">[<span style="color: #228b22;">cursor</span>]
 </pre>
 </div>
 </div>
-<div id="outline-container-org7d37367" class="outline-4">
-<h4 id="org7d37367">style</h4>
-<div class="outline-text-4" id="text-org7d37367">
+<div id="outline-container-orgacbda46" class="outline-4">
+<h4 id="orgacbda46">style</h4>
+<div class="outline-text-4" id="text-orgacbda46">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">style</span> = { shape = <span style="color: #bc8f8f;">"Beam"</span>, blinking = <span style="color: #bc8f8f;">"On"</span> }
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgf7ffb9a" class="outline-4">
-<h4 id="orgf7ffb9a">vi mode style</h4>
-<div class="outline-text-4" id="text-orgf7ffb9a">
+<div id="outline-container-org85ff64b" class="outline-4">
+<h4 id="org85ff64b">vi mode style</h4>
+<div class="outline-text-4" id="text-org85ff64b">
 <p>
 If the vi mode cursor style is "None" or not specified, it will fall back to the active value of the normal cursor.
 </p>
@@ -529,17 +532,17 @@ If the vi mode cursor style is "None" or not specified, it will fall back to the
 </div>
 </div>
 </div>
-<div id="outline-container-orge172551" class="outline-3">
-<h3 id="orge172551">mouse</h3>
-<div class="outline-text-3" id="text-orge172551">
+<div id="outline-container-org969a742" class="outline-3">
+<h3 id="org969a742">mouse</h3>
+<div class="outline-text-3" id="text-org969a742">
 <div class="org-src-container">
 <pre class="src src-toml">[<span style="color: #228b22;">mouse</span>]
 </pre>
 </div>
 </div>
-<div id="outline-container-orgb669b34" class="outline-4">
-<h4 id="orgb669b34">hide when typing</h4>
-<div class="outline-text-4" id="text-orgb669b34">
+<div id="outline-container-orgfc56715" class="outline-4">
+<h4 id="orgfc56715">hide when typing</h4>
+<div class="outline-text-4" id="text-orgfc56715">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">hide_when_typing</span> = <span style="color: #4169e1;">true</span>
 </pre>
@@ -547,17 +550,17 @@ If the vi mode cursor style is "None" or not specified, it will fall back to the
 </div>
 </div>
 </div>
-<div id="outline-container-org6a85e3d" class="outline-3">
-<h3 id="org6a85e3d">selection</h3>
-<div class="outline-text-3" id="text-org6a85e3d">
+<div id="outline-container-org38b13d8" class="outline-3">
+<h3 id="org38b13d8">selection</h3>
+<div class="outline-text-3" id="text-org38b13d8">
 <div class="org-src-container">
 <pre class="src src-toml">[<span style="color: #228b22;">selection</span>]
 </pre>
 </div>
 </div>
-<div id="outline-container-org286ff34" class="outline-4">
-<h4 id="org286ff34">save to clipboard</h4>
-<div class="outline-text-4" id="text-org286ff34">
+<div id="outline-container-org208443c" class="outline-4">
+<h4 id="org208443c">save to clipboard</h4>
+<div class="outline-text-4" id="text-org208443c">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">save_to_clipboard</span> = <span style="color: #4169e1;">true</span>
 </pre>
@@ -565,17 +568,17 @@ If the vi mode cursor style is "None" or not specified, it will fall back to the
 </div>
 </div>
 </div>
-<div id="outline-container-org75e5246" class="outline-3">
-<h3 id="org75e5246">env</h3>
-<div class="outline-text-3" id="text-org75e5246">
+<div id="outline-container-org651d564" class="outline-3">
+<h3 id="org651d564">env</h3>
+<div class="outline-text-3" id="text-org651d564">
 <div class="org-src-container">
 <pre class="src src-toml">[<span style="color: #228b22;">env</span>]
 </pre>
 </div>
 </div>
-<div id="outline-container-orga32f993" class="outline-4">
-<h4 id="orga32f993">term</h4>
-<div class="outline-text-4" id="text-orga32f993">
+<div id="outline-container-org926142a" class="outline-4">
+<h4 id="org926142a">term</h4>
+<div class="outline-text-4" id="text-org926142a">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">TERM</span> = <span style="color: #bc8f8f;">"xterm-256color"</span>
 </pre>
@@ -583,69 +586,69 @@ If the vi mode cursor style is "None" or not specified, it will fall back to the
 </div>
 </div>
 </div>
-<div id="outline-container-org8609f63" class="outline-3">
-<h3 id="org8609f63">hints</h3>
-<div class="outline-text-3" id="text-org8609f63">
+<div id="outline-container-orgaf5f3ef" class="outline-3">
+<h3 id="orgaf5f3ef">hints</h3>
+<div class="outline-text-3" id="text-orgaf5f3ef">
 </div>
-<div id="outline-container-org3e2ee4a" class="outline-4">
-<h4 id="org3e2ee4a">enabled</h4>
-<div class="outline-text-4" id="text-org3e2ee4a">
+<div id="outline-container-orgd688312" class="outline-4">
+<h4 id="orgd688312">enabled</h4>
+<div class="outline-text-4" id="text-orgd688312">
 <div class="org-src-container">
 <pre class="src src-toml">[[<span style="color: #228b22;">hints.enabled</span>]]
 </pre>
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="org7d20329"></a>command<br />
-<div class="outline-text-5" id="text-org7d20329">
+<li><a id="org5987812"></a>command<br />
+<div class="outline-text-5" id="text-org5987812">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">command</span> = <span style="color: #bc8f8f;">"xdg-open"</span>
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgd4f12d1"></a>hyperlinks<br />
-<div class="outline-text-5" id="text-orgd4f12d1">
+<li><a id="org2f512c7"></a>hyperlinks<br />
+<div class="outline-text-5" id="text-org2f512c7">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">hyperlinks</span> = <span style="color: #4169e1;">true</span>
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org1714e6f"></a>post processing<br />
-<div class="outline-text-5" id="text-org1714e6f">
+<li><a id="org3501fa5"></a>post processing<br />
+<div class="outline-text-5" id="text-org3501fa5">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">post_processing</span> = <span style="color: #4169e1;">true</span>
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgfa3644e"></a>persist<br />
-<div class="outline-text-5" id="text-orgfa3644e">
+<li><a id="org2cbbe79"></a>persist<br />
+<div class="outline-text-5" id="text-org2cbbe79">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">persist</span> = <span style="color: #4169e1;">false</span>
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orge3a07af"></a>mouse<br />
-<div class="outline-text-5" id="text-orge3a07af">
+<li><a id="org3afc733"></a>mouse<br />
+<div class="outline-text-5" id="text-org3afc733">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">mouse.enabled</span> = <span style="color: #4169e1;">true</span>
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org7fc8f88"></a>binding<br />
-<div class="outline-text-5" id="text-org7fc8f88">
+<li><a id="org6874aa3"></a>binding<br />
+<div class="outline-text-5" id="text-org6874aa3">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">binding</span> = { key = <span style="color: #bc8f8f;">"U"</span>, mods = <span style="color: #bc8f8f;">"Control|Shift"</span> }
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org44c7f8c"></a>regex<br />
-<div class="outline-text-5" id="text-org44c7f8c">
+<li><a id="org3b0d8a8"></a>regex<br />
+<div class="outline-text-5" id="text-org3b0d8a8">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b8860b;">regex</span> = <span style="color: #bc8f8f;">"(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F&lt;&gt;\"\\s{-}\\^&#10216;&#10217;`]+"</span>
 </pre>
@@ -656,13 +659,13 @@ If the vi mode cursor style is "None" or not specified, it will fall back to the
 </div>
 </div>
 </div>
-<div id="outline-container-orge6772be" class="outline-2">
-<h2 id="orge6772be">Themes</h2>
-<div class="outline-text-2" id="text-orge6772be">
+<div id="outline-container-orgd0bb3c4" class="outline-2">
+<h2 id="orgd0bb3c4">Themes</h2>
+<div class="outline-text-2" id="text-orgd0bb3c4">
 </div>
-<div id="outline-container-org7e36529" class="outline-3">
-<h3 id="org7e36529">nord</h3>
-<div class="outline-text-3" id="text-org7e36529">
+<div id="outline-container-orgedcacd6" class="outline-3">
+<h3 id="orgedcacd6">nord</h3>
+<div class="outline-text-3" id="text-orgedcacd6">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b22222;"># </span><span style="color: #b22222;">-*- eval: (rainbow-mode 1) -*-
 </span><span style="color: #b22222;"># </span><span style="color: #b22222;">Colors (Nord)
@@ -703,7 +706,7 @@ If the vi mode cursor style is "None" or not specified, it will fall back to the
 <div id="postamble" class="status">
 <p class="date">Date: 2025-09-17 Wed 00:00</p>
 <p class="author">Author: Kristian Alexander P</p>
-<p class="date">Created: 2025-09-17 Wed 08:26</p>
+<p class="date">Created: 2025-09-17 Wed 08:30</p>
 </div>
 </body>
 </html>
