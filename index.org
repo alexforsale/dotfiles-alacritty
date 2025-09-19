@@ -71,6 +71,9 @@ Override the variant of the System theme/GTK theme/Wayland client side decoratio
   decorations_theme_variant = "Dark"
 #+end_src
 ** scrolling
+#+begin_src toml
+  [scrolling]
+#+end_src
 *** history
 Maximum number of lines in the scrollback buffer. Specifying 0 will disable scrolling. Limited to 100000.
 #+begin_src toml
