@@ -127,7 +127,7 @@ Visual bell animation effect for flashing the screen when the visual bell is run
 #+end_src
 *** style
 #+begin_src toml
-  style = { shape = "Beam", blinking = "On" }
+  style = { shape = "Block", blinking = "Always" }
 #+end_src
 *** vi mode style
 If the vi mode cursor style is "None" or not specified, it will fall back to the active value of the normal cursor.
